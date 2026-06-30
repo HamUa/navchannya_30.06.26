@@ -58,3 +58,4 @@
 
 # "C:\Users\admin\Desktop\1.txt"
 
+print("Hello world")
