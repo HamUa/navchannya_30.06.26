@@ -20,16 +20,16 @@
 # print(not is_valid)  # not -> інверсія, якщо значення False стане True, і навпаки !
 # #
 # print("hello" in "hello world")
-
-###
+#
+# ##
 # hours = int(input("Enter hours: "))
-
+#
 # v1
 # if hours >= 12:
 #     print("PM")
 # else:
 #     print("AM")
-
+#
 # v2
 # if 12 <= hours < 24:  # hours >= 12 and hours < 24
 #     print("PM")
@@ -37,10 +37,10 @@
 #     print("AM")
 # else:
 #     print("Incorrect hours!")
-
-####
+#
+# ###
 # ввести рейтинг фільму: якщо рейтинг дорівнює 5 або 4 - ок, інакше - погано
-
+#
 # film_rating = int(input("Enter film rating: "))
 #
 # if 0 < film_rating <= 5:  # film_rating > 0 and film_rating <= 5
@@ -50,16 +50,16 @@
 #         print("Film not OK!")
 # else:
 #     print("Incorrect Rating!")
-
-####
+#
+# ###
 # ввести з клавіатури 3 числа
 # - вивести найменше із трьох чисел
 # - кiлькiсть однакових чисел
-
+#
 # number1 = int(input("Enter first number: "))
 # number2 = int(input("Enter second number: "))
 # number3 = int(input("Enter third number: "))
-
+#
 # - вивести найменше із трьох чисел
 # v1
 # if number1 < number2 < number3:  # number1 < number2 and number1 < number3
@@ -68,7 +68,7 @@
 #     print(number2)
 # elif number3 < number1 < number2:
 #     print(number3)
-
+#
 # problems
 # if number1 <= number2 <= number3:  # number1 < number2 and number1 < number3
 #     print(number1)
@@ -78,14 +78,14 @@
 #     print(number3)
 # else:
 #     print(number3)
-
+#
 # if number1 <= number2 and number1 <= number3:  # number1 < number2 and number1 < number3
 #     print(number1)
 # elif number2 <= number1 and number2 <= number3:
 #     print(number2)
 # elif number3 <= number2 and number3 <= number1:
 #     print(number3)
-
+#
 # v2
 # if number1 == number2 == number3:  # number1 == number2 and number2 == number3
 #     print("All numbers are equal")
@@ -105,7 +105,7 @@
 #             print(number3)
 #         else:
 #             print(number2)
-
+#
 # - кiлькiсть однакових чисел
 # if number1 == number2 == number3:
 #     print(3)
@@ -113,8 +113,8 @@
 #     print(2)
 # else:
 #     print(0)
-
-###
+#
+# ##
 # user_select = int(input("1. Start\n2. Settings\n3. Saved games\n4. Exit\nSelect your choice: "))
 #
 # # v1
@@ -141,13 +141,13 @@
 #         print("Exit")
 #     case _: # аналог else
 #         print("Invalid input please try again")
-
+#
 # _ = "test user"
 # print(_)
-
+#
 #
 # number_a = 10 if number_b < 5 else 20
-
+#
 # number_b = 30
 #
 # # v1
@@ -159,8 +159,8 @@
 # # v2
 # number_a = 10 if number_b < 5 else 20
 # print(number_a)
-
-#########
+#
+# ########
 # number_b = 30
 #
 # if number_b < 5:
@@ -173,8 +173,8 @@
 #
 # number_a = 10 if number_b % 2 == 0 else 15 if number_b < 5 else 20
 # print(number_a)
-
-#################################################################
+#
+# ################################################################
 # list
 # numbers = []
 # numbers_1 = list()
@@ -196,8 +196,8 @@
 # print(numbers[-1])
 # #
 # print(numbers[len(numbers)])  # numbers[6] -> error
-
-####################################
+#
+# ###################################
 # #
 # values = ["one", 12, 12.4, True]
 # print(values)
@@ -205,7 +205,7 @@
 # #
 # nums: list[int] = [1, 3] * 5
 # print(nums)
-
+#
 # slices -> срезы
 # numbers = [1, 3, 25, 7, 2, 7]
 #
@@ -217,18 +217,18 @@
 # print(numbers[::-1])
 # print(numbers[5::-1])
 # print(numbers[5:0:-1])
-
+#
 # Розкладання списку (декомпозиція)
 # users = ["Vasya", "Petya"]
 # user_1, user_2 = users
 # print(user_1)
 # print(user_2)
 # print(users)
-#
-numbers = [1, 4, 2, 7, 4, 9, 6, 1, 4]
-print(numbers)
+# #
+# numbers = [1, 4, 2, 7, 4, 9, 6, 1, 4]
+# print(numbers)
 # append(item): додає елемент item до кінця списку
-
+#
 # numbers.append(2222)
 # print(numbers)
 # #
@@ -276,11 +276,11 @@ print(numbers)
 # # # count(item): повертає кількість входжень елемента item до списку
 # #
 # print(numbers.count(6))
-
+#
 # sort([key]): Сортує елементи. За умовчанням сортує за зростанням.
 # Але за допомогою key ми можемо передати функцію сортування.
 # sorted(list, [key]): повертає відсортований список
-
+#
 # v1
 # numbers.sort()
 # print(numbers)
@@ -288,7 +288,7 @@ print(numbers)
 # numbers_sorted = sorted(numbers)
 # print(numbers_sorted)
 # print(numbers)
-
+#
 # people = ["Tom", "bob", "alice", "Sam", "Bill"]
 # v1
 # people.sort()
@@ -300,7 +300,7 @@ print(numbers)
 # people_sorted = sorted(people, key=str.lower)
 # print(people_sorted)
 # print(people)
-
+#
 # # reverse(): розставляє всі елементи у списку у зворотному порядку
 #
 # numbers.reverse()
@@ -315,7 +315,7 @@ print(numbers)
 # nums_copy[1] = 1111
 # print(nums_1)
 # print(nums_copy)
-
+#
 # # Крім того, Python надає ряд вбудованих функцій для роботи зі списками:
 # #
 # # len(list): повертає довжину списку
@@ -335,8 +335,8 @@ print(numbers)
 # # #
 # letters = ["ab", "ac"]
 # print(max(letters))
-
-###############
+#
+# ##############
 # text = "hello world. goodbye world."
 # search_item = ". "
 #
@@ -352,12 +352,12 @@ print(numbers)
 #
 # result_sentence = search_item.join(result)
 # print(result_sentence)
-
+#
 # [12, 3, 4, 10] => [10, 12, 3, 4]
 # [1] => [1]
 # [] => []
 # [12, 3, 4, 10, 8] => [8, 12, 3, 4, 10]
-
+#
 # nums = [12, 3, 4, 10, 8]
 # if len(nums) > 0:
 #     nums.insert(0, nums[-1])
@@ -365,14 +365,14 @@ print(numbers)
 #     nums.pop()
 #
 # print(nums)
-
-####
+#
+# ###
 # [1, 2, 3, 4, 5, 6] => [[1, 2, 3], [4, 5, 6]]
 # [1, 2, 3] => [[1, 2], [3]]
 # [1, 2, 3, 4, 5] => [[1, 2, 3], [4, 5]]
 # [1] => [[1], []]
 # [] => [[], []]
-
+#
 # Ваша програма повинна вміти розділяти один список на два та помістити їх у новий список.
 # Тобто, в результаті повинен вийти список із 2-х списків.
 #
@@ -382,16 +382,16 @@ print(numbers)
 #
 # Важливо! Потрібно створити рішення, яке обробляє 3 випадки - список порожній,
 # у списку парна кількість елементів і в списку непарна кількість елементів.
+#
+nums = [1, 2, 3, 4, 5, 6]
+middle_index = len(nums) // 2
 
-# nums = []
-# middle_index = len(nums) // 2
-#
-# if len(nums) % 2 != 0:
-#     middle_index += 1
-#
-# part1 = nums[:middle_index]
-# part2 = nums[middle_index:]
-# print(part1)
-# print(part2)
-# result = [part1, part2]
-# print(result)
+if len(nums) % 2 != 0:
+    middle_index += 1
+
+part1 = nums[:middle_index]
+part2 = nums[middle_index:]
+print(part1)
+print(part2)
+result = [part1, part2]
+print(result)
