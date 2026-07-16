@@ -76,9 +76,9 @@
 
 
 ###
-# for i in range(5):  # range(5) -> 0, 1, 2, 3, 4
-#     print("Hello")
-#     print(i, end=" ")
+for i in range(5):  # range(5) -> 0, 1, 2, 3, 4
+    print("Hello")
+    print(i, end=" ")
 #
 # for value in 1, 4, "asrfrfg", True, 1.5, "hello":
 #     print(value)
@@ -359,10 +359,10 @@
 # print(numbers)
 
 ###############
-values = ["Vasya", 33, ["dance", "walk"]]
-print(values)
-print(values[2])
-print(values[2][0])
+# values = ["Vasya", 33, ["dance", "walk"]]
+# print(values)
+# print(values[2])
+# print(values[2][0])
 
 ##
 # v1
