@@ -1,7 +1,6 @@
 import keyword
 import string
 
-
 def is_valid_variable_name(name: str) -> bool:
     if not name:
         return False
