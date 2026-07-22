@@ -1,15 +1,31 @@
-import string
 import keyword
+import string
 
-name = input()
 
-valid = (
-    name.isidentifier()
-    and name not in keyword.kwlist
-    and "__" not in name
-    and not any(char.isupper() for char in name)
-    and not any(char in string.punctuation and char != "_" for char in name)
-)
+def is_valid_variable_name(name: str) -> bool:
+    if not name:
+        return False
 
-print(valid)
+    if name[0].isdigit():
+        return False
 
+    if name in keyword.kwlist:
+        return False
+
+    if "__" in name:
+        return False
+
+    for symbol in name:
+        if symbol.isupper():
+            return False
+        if symbol.isspace():
+            return False
+        if symbol in string.punctuation and symbol != "_":
+            return False
+
+    return True
+
+
+if __name__ == "__main__":
+    variable_name = input("Введіть можливе ім'я змінної: ")
+    print(is_valid_variable_name(variable_name))
