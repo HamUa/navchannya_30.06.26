@@ -29,3 +29,5 @@ def is_valid_variable_name(name: str) -> bool:
 if __name__ == "__main__":
     variable_name = input("Введіть можливе ім'я змінної: ")
     print(is_valid_variable_name(variable_name))
+
+
