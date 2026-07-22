@@ -1,37 +1,15 @@
-import keyword
 import string
+import keyword
 
-user_input = input("Введіть назву змінної: ")
+name = input()
 
-allowed_punctuation = "_"
-forbidden_punctuation = set(string.punctuation) - set(allowed_punctuation)
+valid = (
+    name.isidentifier()
+    and name not in keyword.kwlist
+    and "__" not in name
+    and not any(char.isupper() for char in name)
+    and not any(char in string.punctuation and char != "_" for char in name)
+)
 
-is_valid = True
-if user_input[0].isdigit():
-    is_valid = False
-elif any(char.isupper() for char in user_input):
-    is_valid = False
-elif any(char.isspace() or char in forbidden_punctuation for char in user_input):
-    is_valid = False
-elif "__" in user_input:
-    is_valid = False
-elif user_input in keyword.kwlist:
-    is_valid = False
+print(valid)
 
-print(is_valid)
-
-# _ => True
-# __ => False
-# ___ => False
-# x => True
-# get_value => True
-# get value => False
-# get!value => False
-# some_super_puper_value => True
-# Get_value => False
-# get_Value => False
-# getValue => False
-# 3m => False
-# m3 => True
-# assert => False
-# assert_exception => True
