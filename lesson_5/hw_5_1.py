@@ -31,8 +31,3 @@ if __name__ == "__main__":
     print(is_valid_variable_name(variable_name))
 
 
-
-# 3m => False
-# m3 => True
-# assert => False
-# assert_exception => True
