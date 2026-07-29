@@ -10,7 +10,7 @@
 #         return 1
 #
 #     # factorial(number - 1) -> запуск рекурсії
-#     return number * factorial(number - 1
+#     return number * factorial(number - 1)
 #
 #
 # print(factorial(5))
@@ -18,7 +18,7 @@
 # import math
 #
 # print(math.factorial(10))
-# factorial(5) -> 5 * factorial(4) => 121
+# factorial(5) -> 5 * factorial(4) => 120
 # factorial(4) -> 4 * factorial(3) => 24
 # factorial(3) -> 3 * factorial(2) => 6
 # factorial(2) -> 2 * factorial(1) => 2
