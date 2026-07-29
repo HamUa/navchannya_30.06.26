@@ -137,19 +137,19 @@
 # print(number)
 
 ##########
-number = 10
-
-
-def test():
-    global number
-
-    number = 11  # змінюємо значення глобальної змінної
-    print(number)
-
-
-print(number)
-test()
-print(number)
+# number = 10
+#
+#
+# def test():
+#     global number
+#
+#     number = 11  # змінюємо значення глобальної змінної
+#     print(number)
+#
+#
+# print(number)
+# test()
+# print(number)
 
 #########
 # def outer():
