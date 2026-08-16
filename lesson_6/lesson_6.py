@@ -50,7 +50,7 @@
 #             print(f"Keyword {potential_variable_name} is correct!")
 #     else:
 #         print(f"Error! Found {potential_variable_name} in variable name!")
-
+/
 # ############
 # 'Python Community' -> #PythonCommunity
 # 'i like python community!' -> #ILikePythonCommunity
